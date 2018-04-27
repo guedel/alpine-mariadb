@@ -83,7 +83,7 @@ if [ "$1" = 'mysqld' -a -z "$wantHelp" -a "$(id -u)" = '0' ]; then
 fi
 
 if [ "$1" = 'mysqld' -a -z "$wantHelp" ]; then
-	rm -rf /var/lib/mysql/*
+	# rm -rf /var/lib/mysql/*
 	# still need to check config, container may have started with --user
 	_check_config "$@"
 	# Get config
